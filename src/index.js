@@ -22,8 +22,8 @@ try {
   const payload = JSON.stringify(github.context.payload)
 
   core.info("setting current time");
-  core.setOutput("timer", `current message time ${datetime}`);
-  core.setOutput("tager", tag);
+  core.setOutput("time", `current message time ${datetime}`);
+  core.setOutput("tags", tag);
   console.log("event payload", payload)
 } catch (error) {
   core.setFailed(`Action failed with error ${error}`);
