@@ -1,0 +1,28 @@
+name: 'Hello Testing Greeting'
+description: "Greeting team members before the week begins"
+author: 'Calvin Puram'
+
+branding:
+  icon: 'loader'
+  color: 'blue'
+
+inputs:
+  staff-name:
+    description: 'The name of the staff to greet'
+    default: "everyone"
+    required: true
+  tags:
+    description: 'List of tags as key-value pair attributes'
+    required: false
+
+
+outputs:
+  time:
+    description: 'The Time We Greeting Happens'
+  tags:
+    description: 'The Generated tags from Staff'
+
+
+runs:
+  using: 'node16'
+  main: '/src/index.js'
